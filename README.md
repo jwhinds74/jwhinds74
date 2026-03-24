@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.svg" alt="Data Visualization Banner" width="100%" />
+<img src="./banner.gif" alt="Data Visualization Banner" width="100%" />
 
 <br/>
 
