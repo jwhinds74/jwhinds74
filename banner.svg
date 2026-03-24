@@ -1,0 +1,122 @@
+<svg width="100%" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    .pulse1{animation:pulse 3s ease-in-out infinite}
+    .pulse2{animation:pulse 3s ease-in-out infinite 0.5s}
+    .pulse3{animation:pulse 3s ease-in-out infinite 1s}
+    .pulse4{animation:pulse 3s ease-in-out infinite 1.5s}
+    .pulse5{animation:pulse 3s ease-in-out infinite 2s}
+    .flow{animation:flow 4s ease-in-out infinite}
+    .flow2{animation:flow 4s ease-in-out infinite 1s}
+    .flow3{animation:flow 4s ease-in-out infinite 2s}
+    .flow4{animation:flow 4s ease-in-out infinite 3s}
+    .fadein{animation:fadein 6s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:0.7;r:attr(r)}50%{opacity:1}}
+    @keyframes flow{0%,100%{stroke-opacity:0.3}50%{stroke-opacity:0.85}}
+    @keyframes fadein{0%,100%{opacity:0.5}50%{opacity:1}}
+  </style>
+  <radialGradient id="bg" cx="30%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="#0d1b3e"/>
+    <stop offset="100%" stop-color="#060d1a"/>
+  </radialGradient>
+</defs>
+
+<rect width="900" height="280" fill="url(#bg)" rx="10"/>
+
+<!-- scattered dots background -->
+<g opacity="0.25" fill="#3a6fa0">
+  <circle cx="20" cy="30" r="1.5"/><circle cx="55" cy="80" r="1"/><circle cx="90" cy="45" r="1.5"/>
+  <circle cx="130" cy="200" r="1"/><circle cx="160" cy="120" r="1.5"/><circle cx="200" cy="250" r="1"/>
+  <circle cx="240" cy="70" r="1"/><circle cx="680" cy="40" r="1.5"/><circle cx="720" cy="100" r="1"/>
+  <circle cx="750" cy="200" r="1.5"/><circle cx="800" cy="60" r="1"/><circle cx="840" cy="180" r="1"/>
+  <circle cx="870" cy="240" r="1.5"/><circle cx="30" cy="200" r="1"/><circle cx="70" cy="250" r="1.5"/>
+</g>
+
+<!-- BUBBLE CLUSTER left side -->
+<!-- Blue bubbles -->
+<circle class="pulse1" cx="310" cy="90" r="28" fill="#1a5fa8" opacity="0.9"/>
+<circle class="pulse3" cx="270" cy="140" r="20" fill="#1467b8" opacity="0.85"/>
+<circle class="pulse2" cx="340" cy="155" r="14" fill="#1a7ad4" opacity="0.8"/>
+<circle class="pulse4" cx="295" cy="60" r="10" fill="#2389e0" opacity="0.75"/>
+<circle class="pulse5" cx="330" cy="200" r="22" fill="#0f4d96" opacity="0.9"/>
+<circle class="pulse1" cx="255" cy="195" r="11" fill="#1a6bbf" opacity="0.7"/>
+<circle class="pulse2" cx="285" cy="230" r="7" fill="#2487d8" opacity="0.65"/>
+
+<!-- Cyan bubbles -->
+<circle class="pulse3" cx="360" cy="115" r="18" fill="#00b4d8" opacity="0.85"/>
+<circle class="pulse5" cx="375" cy="170" r="12" fill="#0096c7" opacity="0.8"/>
+<circle class="pulse1" cx="345" cy="60" r="8" fill="#00cfff" opacity="0.7"/>
+<circle class="pulse4" cx="395" cy="140" r="7" fill="#48cae4" opacity="0.75"/>
+
+<!-- Orange bubbles -->
+<circle class="pulse2" cx="315" cy="175" r="22" fill="#e07b1a" opacity="0.88"/>
+<circle class="pulse4" cx="355" cy="205" r="16" fill="#f4922a" opacity="0.82"/>
+<circle class="pulse1" cx="290" cy="175" r="9" fill="#e68a20" opacity="0.7"/>
+<circle class="pulse3" cx="375" cy="85" r="13" fill="#f5a438" opacity="0.78"/>
+<circle class="pulse5" cx="400" cy="190" r="9" fill="#e07b1a" opacity="0.7"/>
+<circle class="pulse2" cx="260" cy="115" r="6" fill="#f0952f" opacity="0.65"/>
+
+<!-- Red bubbles -->
+<circle class="pulse4" cx="330" cy="125" r="10" fill="#d93030" opacity="0.85"/>
+<circle class="pulse1" cx="310" cy="230" r="7" fill="#e83030" opacity="0.7"/>
+<circle class="pulse3" cx="380" cy="50" r="5" fill="#c42828" opacity="0.75"/>
+
+<!-- Small scattered -->
+<circle class="pulse2" cx="240" cy="155" r="5" fill="#58a6ff" opacity="0.6"/>
+<circle class="pulse5" cx="410" cy="90" r="4" fill="#f4922a" opacity="0.55"/>
+<circle class="pulse3" cx="420" cy="155" r="4" fill="#d93030" opacity="0.55"/>
+<circle class="pulse1" cx="230" cy="90" r="4" fill="#00b4d8" opacity="0.5"/>
+<circle class="pulse4" cx="220" cy="200" r="3" fill="#1a6bbf" opacity="0.5"/>
+<circle class="pulse2" cx="400" cy="230" r="5" fill="#1a7ad4" opacity="0.55"/>
+
+<!-- CONVERGING LINES from cluster to targets -->
+<!-- To target Blue (y=80) -->
+<line class="flow" x1="420" y1="100" x2="740" y2="80" stroke="#1a7ad4" stroke-width="1.2"/>
+<line class="flow2" x1="420" y1="130" x2="740" y2="80" stroke="#1a6bbf" stroke-width="1.2"/>
+<line class="flow3" x1="420" y1="90" x2="740" y2="80" stroke="#2389e0" stroke-width="1"/>
+<line class="flow4" x1="420" y1="155" x2="740" y2="80" stroke="#1467b8" stroke-width="1"/>
+<line class="flow" x1="420" y1="170" x2="740" y2="80" stroke="#58a6ff" stroke-width="0.8"/>
+<line class="flow2" x1="420" y1="115" x2="740" y2="80" stroke="#2389e0" stroke-width="0.8"/>
+
+<!-- To target Orange (y=145) -->
+<line class="flow3" x1="420" y1="140" x2="740" y2="145" stroke="#e07b1a" stroke-width="1.2"/>
+<line class="flow4" x1="420" y1="165" x2="740" y2="145" stroke="#f4922a" stroke-width="1.2"/>
+<line class="flow" x1="420" y1="185" x2="740" y2="145" stroke="#e68a20" stroke-width="1"/>
+<line class="flow2" x1="420" y1="120" x2="740" y2="145" stroke="#f5a438" stroke-width="1"/>
+<line class="flow3" x1="420" y1="200" x2="740" y2="145" stroke="#e07b1a" stroke-width="0.8"/>
+<line class="flow4" x1="420" y1="105" x2="740" y2="145" stroke="#f4922a" stroke-width="0.8"/>
+
+<!-- To target Cyan (y=195) -->
+<line class="flow2" x1="420" y1="150" x2="740" y2="195" stroke="#00b4d8" stroke-width="1.2"/>
+<line class="flow3" x1="420" y1="175" x2="740" y2="195" stroke="#0096c7" stroke-width="1.2"/>
+<line class="flow4" x1="420" y1="195" x2="740" y2="195" stroke="#48cae4" stroke-width="1"/>
+<line class="flow" x1="420" y1="130" x2="740" y2="195" stroke="#00cfff" stroke-width="1"/>
+<line class="flow2" x1="420" y1="210" x2="740" y2="195" stroke="#0096c7" stroke-width="0.8"/>
+<line class="flow3" x1="420" y1="160" x2="740" y2="195" stroke="#00b4d8" stroke-width="0.8"/>
+
+<!-- To target Red (y=245) -->
+<line class="flow4" x1="420" y1="180" x2="740" y2="245" stroke="#d93030" stroke-width="1.4"/>
+<line class="flow" x1="420" y1="205" x2="740" y2="245" stroke="#e83030" stroke-width="1.4"/>
+<line class="flow2" x1="420" y1="220" x2="740" y2="245" stroke="#c42828" stroke-width="1.2"/>
+<line class="flow3" x1="420" y1="160" x2="740" y2="245" stroke="#d93030" stroke-width="1"/>
+<line class="flow4" x1="420" y1="140" x2="740" y2="245" stroke="#e83030" stroke-width="0.8"/>
+<line class="flow" x1="420" y1="195" x2="740" y2="245" stroke="#c42828" stroke-width="0.8"/>
+
+<!-- TARGET NODES right side -->
+<circle cx="748" cy="80" r="9" fill="#1a7ad4"/>
+<text x="762" y="85" font-family="monospace" font-size="13" fill="#58a6ff">2264</text>
+
+<circle cx="748" cy="145" r="9" fill="#e07b1a"/>
+<text x="762" y="150" font-family="monospace" font-size="13" fill="#f4922a">1681</text>
+
+<circle cx="748" cy="195" r="9" fill="#00b4d8"/>
+<text x="762" y="200" font-family="monospace" font-size="13" fill="#48cae4">2599</text>
+
+<circle cx="748" cy="245" r="9" fill="#d93030"/>
+<text x="762" y="250" font-family="monospace" font-size="13" fill="#e87070">7149</text>
+
+<!-- Text overlay -->
+<text x="450" y="38" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#ffffff" opacity="0.9">Jhon Hinds, M.Sc.</text>
+<text x="450" y="58" font-family="Arial,sans-serif" font-size="11" fill="#8ab4d4" opacity="0.85">Statistician · Advanced Analytics · AI &amp; Data Science</text>
+
+</svg>
