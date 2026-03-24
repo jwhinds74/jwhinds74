@@ -41,7 +41,10 @@
 
 ## 🚀 Featured Projects
 
-### 🔐 XGBit — Bitcoin Price Prediction *(Private)*
+### 🔐 XGBit — Bitcoin Price Prediction
+
+> [![Private](https://img.shields.io/badge/🔒_PRIVATE-Proprietary_Research-FF6B35?style=for-the-badge)](https://github.com/jwhinds74)
+
 > Advanced **Bitcoin price prediction system** combining **Machine Learning** with **market regime detection**.  
 > Leverages XGBoost under a multi-regime framework to adapt predictions dynamically to changing market conditions — bull, bear, and sideways phases.  
 > **Stack:** `Python` `XGBoost` `Regime Detection` `Feature Engineering` `Time Series`
@@ -50,10 +53,10 @@
 
 ---
 
-### 🏦 [Customer Engage — Logistic Regression](https://github.com/jwhinds74/customer-engage-logistic-regression)
-> Proof-of-concept showcasing logistic regression for **financial institutions' marketing** decisions.  
-> Predicts the likelihood of customer engagement using an open Kaggle dataset as a practical reference.  
-> **Stack:** `Python` `Scikit-learn` `Pandas` `Logistic Regression`
+### 📊 [Marketing A/B Testing Samples](https://github.com/jwhinds74/marketing-ab-testing-samples)
+> Proof-of-concept showcasing **A/B testing** for promo code impact on AOV in retail marketing analytics.  
+> Simulated data recreating real project scenarios to demonstrate the methodology in practice.  
+> **Stack:** `Python` `Pandas` `Jupyter Notebook` `Statistical Testing`
 
 ---
 
